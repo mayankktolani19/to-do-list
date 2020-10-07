@@ -1,8 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:todoey/models/task_data.dart';
 import 'package:todoey/screens/add_task_screen.dart';
 import 'package:todoey/widgets/tasks_list.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 
 class TasksScreen extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -55,6 +56,7 @@ class TasksScreen extends StatelessWidget {
             ),
           ),
           Expanded(
+            flex:1
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 20),
               height: 300,
